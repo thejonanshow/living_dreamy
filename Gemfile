@@ -21,5 +21,4 @@ group :development, :test do
   gem 'fabrication'
   gem 'faker'
   gem 'domino'
-  gem 'lolcommits'
 end
