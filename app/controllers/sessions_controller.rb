@@ -1,12 +1,6 @@
 class SessionsController < ApplicationController
 
   skip_before_filter :authenticate!
-  
-  def new
-    if signed_in?
-      redirect_to root_path
-    end
-  end
 
   def create
     google_apps_authenticate "hungrymachine.com", 'callback', [:email]
