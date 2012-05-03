@@ -1,1 +1,9 @@
 h1 Dreams
+
+= link_to "I have a dream", new_dream_path, :id => 'new_dream'
+
+#dreams
+  - @dreams.each do |dream|
+    .dream
+      h3 = dream.title
+      p = dream.description

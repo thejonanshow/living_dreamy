@@ -21,5 +21,4 @@ group :development, :test do
   gem 'launchy'
   gem 'fabrication'
   gem 'faker'
-  gem 'domino'
 end
