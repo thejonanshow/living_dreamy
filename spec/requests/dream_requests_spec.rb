@@ -17,21 +17,17 @@ describe Dream do
       visit dream_path(dream)
       page.should have_content dream.title
       page.should have_content dream.description
-      page.should have_content "Votes: #{dream.votes}"
+      page.should have_content dream.votes
     end
 
     it "updated" do
-      old_dream_title = dream.title
-      old_dream_description = dream.description
       visit edit_dream_path(dream)
-      page.should have_content dream.title
+      find('#dream_title').value.should == dream.title
       page.should have_content dream.description
       fill_in_dream(new_dream)
       expect { click_button 'Update Dream' }.to change { Dream.count }.by(0)
-      dream.title.should == new_dream.title
-      dream.title.should_not == old_dream_title
-      dream.description.should == new_dream.description
-      dream.description.should_not == old_dream_description
+      page.should have_content new_dream.title
+      page.should have_content new_dream.description
     end
 
     it "destroyed"

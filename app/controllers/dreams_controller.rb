@@ -28,7 +28,7 @@ class DreamsController < ApplicationController
   def update
     @dream = Dream.find(params[:id])
 
-    if @dream.save
+    if @dream.update_attributes(params[:dream])
       redirect_to dream_path(@dream)
     else
       render :edit

@@ -18,6 +18,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'capybara'
+  gem 'launchy'
   gem 'fabrication'
   gem 'faker'
   gem 'domino'
