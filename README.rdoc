@@ -1,3 +1,6 @@
 == Living Dreamy by @1337807
 
 Living Social Hackathon - May 2012
+
+This application aspires to be a place for Living Socialites to track, share and
+vote on ideas.
