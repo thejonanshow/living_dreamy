@@ -19,4 +19,6 @@ group :development, :test do
   gem 'capybara'
   gem 'fabrication'
   gem 'faker'
+  gem 'domino'
+  gem 'lolcommits'
 end

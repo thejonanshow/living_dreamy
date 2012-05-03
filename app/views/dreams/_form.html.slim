@@ -1,1 +1,4 @@
-= form_for
+= form_for(@dream) do |f|
+  = f.text_field :title
+  = f.text_area :description
+  = f.submit
