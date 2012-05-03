@@ -1,7 +1,8 @@
 require 'spec_helper'
+include DreamHelper
 
 describe Dream do
-  describe "it can be" do
+  describe "can be" do
     let(:dream) { Fabricate(:dream) }
     let(:new_dream) { Fabricate.build(:dream) }
 
@@ -36,7 +37,7 @@ describe Dream do
     it "destroyed"
   end
 
-  pending "it can't be" do
+  pending "can't be" do
     it "updated by another user unless they're an admin"
     it "destroyed by another user unless they're an admin"
   end
