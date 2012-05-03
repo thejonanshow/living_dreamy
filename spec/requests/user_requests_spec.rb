@@ -11,5 +11,8 @@ describe User do
     page.should have_link 'new_dream'
   end
 
-  it "can't create new dreams unless logged in"
+  it "can't create new dreams unless logged in" do
+    visit root_path
+    page.should_not have_link 'new_dream'
+  end
 end

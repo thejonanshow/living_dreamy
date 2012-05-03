@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
 gem 'slim'
+gem "googleapps-auth", "0.0.6", :git => "git://github.com/1337807/rails-googleapps-auth.git", :require => "googleapps_auth"
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
